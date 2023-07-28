@@ -5,8 +5,8 @@ class MyExamplesController < ApplicationController
   end
 
   def numbers
-    number = (1..60).each { |num| puts num }
+    numbers = [rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60)]
 
-    render json: number
+    render json: numbers
   end
 end
